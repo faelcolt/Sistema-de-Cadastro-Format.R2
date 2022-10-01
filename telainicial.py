@@ -1,3 +1,4 @@
+# FORMULÁRIO PARA CADASTRO DE CLIENTES
 
 # Bibliotecas:
 from tkinter import *
@@ -11,7 +12,7 @@ class Aplicacao():
         self.janela = janela
         self.tela()
         self.frames()
-        self.criando_botoes()
+        self.botoes()
         janela.mainloop()
         
     def tela(self):
@@ -29,15 +30,32 @@ class Aplicacao():
         self.frame2 = Frame(self.janela, bd=4, bg='#BEBEBE', highlightbackground='black', highlightthickness=3)
         self.frame2.place(relx=0.02, rely=0.5, relwidth=0.96, relheight=0.45)
         
-    def criando_botoes(self):
+    def botoes(self):
         
-        # Botão Limpar:
+        # Botão Pesquisar:
         self.bt_limpar = Button(self.frame1, text='LIMPAR')
         self.bt_limpar.place(relx=0.2, rely=0.1, relwidth=0.1, relheight=0.15)
         
         # Botão Procurar:
-        self.bt_limpar = Button(self.frame1, text='LIMPAR')
-        self.bt_limpar.place(relx=0.2, rely=0.1, relwidth=0.1, relheight=0.15)
+        self.bt_limpar = Button(self.frame1, text='PESQUISAR')
+        self.bt_limpar.place(relx=0.3, rely=0.1, relwidth=0.1, relheight=0.15)
+        
+        # Botão Novo:
+        self.bt_limpar = Button(self.frame1, text='NOVO')
+        self.bt_limpar.place(relx=0.6, rely=0.1, relwidth=0.1, relheight=0.15)
+        
+        # Botão Alterar:
+        self.bt_limpar = Button(self.frame1, text='ALTERAR')
+        self.bt_limpar.place(relx=0.7, rely=0.1, relwidth=0.1, relheight=0.15)
+        
+        # Botão Apagar:
+        self.bt_limpar = Button(self.frame1, text='APAGAR')
+        self.bt_limpar.place(relx=0.8, rely=0.1, relwidth=0.1, relheight=0.15)
+        
+        # Entrada de Dados:
+        self.lb_codigo = Label(self.frame1, text='CÓDIGO')   
+        self.lb_codigo.place(relx=0.05, relx=0.05)
+        
 
 # Chamando a Função:        
 Aplicacao()
