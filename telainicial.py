@@ -1,22 +1,28 @@
+from email.mime import application
 from tkinter import *
 
-root = Tk()
+janela = Tk()
 
-class Application():
+class Aplicacao():
     def __init__(self):
-        self.root = root
+        self.janela = janela
         self.tela()
-        self.frames_da_tela()
-        root.mainloop()
+        self.frames()
+        janela.mainloop()
     def tela(self):
-        self.root.title('CADASTRO DE CLIENTES')
-        self.root.configure(background='#1e3743')
-        self.root.geometry('788x588')
-        self.root.resizable(True, True)
-        self.root.maxsize(width=988, height=788)
-        self.root.minsize(width=400, height=300)
-    def frames_da_tela(self):
-        self.frame_1 = Frame(self.root, bd=4, bg='#dfe3ee', highlightbackground='#759fe6')
-        self.frame_1.place(relx=0.02, rely=0.02, relwidth=0.96, relheight=0.46)
+        self.janela.title("CADASTRO DE CLIENTES")
+        self.janela.configure(background= '#708090')
+        self.janela.geometry("850x550")
+        self.janela.resizable(True, True)
+        self.janela.maxsize(width= 880, height= 680)
+        self.janela.minsize(width=550, height=380)
+    def frames(self):
+        self.frame1 = Frame(self.janela, bd = 4, bg = '#BEBEBE',
+                            highlightbackground= 'black', highlightthickness=3 )
+        self.frame1.place(relx= 0.02 , rely=0.02, relwidth= 0.96,relheight= 0.45)
 
-Application()
+        self.frame2 = Frame(self.janela, bd=4, bg='#BEBEBE',
+                            highlightbackground='black', highlightthickness=3)
+        self.frame2.place(relx=0.02, rely=0.5, relwidth=0.96, relheight=0.45)
+        
+Aplicacao()
