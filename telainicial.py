@@ -1,5 +1,3 @@
-# FORMULÁRIO PARA CADASTRO DE CLIENTES
-
 # Bibliotecas:
 from tkinter import *
 
@@ -16,7 +14,7 @@ class Aplicacao():
         janela.mainloop()
   
     def tela(self):
-        self.janela.title("CADASTRO DE CLIENTES")
+        self.janela.title("SYS - CAD - FR2")
         self.janela.configure(background= '#708090')
         self.janela.geometry("850x550")
         self.janela.resizable(True, True)
