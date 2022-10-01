@@ -1,8 +1,11 @@
-from email.mime import application
+
+# Bibliotecas:
 from tkinter import *
 
+# Chamando o Tkinter:
 janela = Tk()
 
+# Main:
 class Aplicacao():
     def __init__(self):
         self.janela = janela
@@ -24,5 +27,6 @@ class Aplicacao():
         self.frame2 = Frame(self.janela, bd=4, bg='#BEBEBE',
                             highlightbackground='black', highlightthickness=3)
         self.frame2.place(relx=0.02, rely=0.5, relwidth=0.96, relheight=0.45)
-        
+
+# Chamando a Função:        
 Aplicacao()
