@@ -5,7 +5,7 @@ from tkinter import *
 janela = Tk()
 
 # Main:
-class Aplicacao():
+class App():
     def __init__(self):
         self.janela = janela
         self.tela()
@@ -23,7 +23,7 @@ class Aplicacao():
         
     def frames(self):
         self.frame1 = Frame(self.janela, bd = 4, bg = '#dfe3ee', highlightbackground= '#759fe6', highlightthickness=3 )
-        self.frame1.place(relx= 0.02 , rely=0.02, relwidth= 0.96,relheight= 0.46)
+        self.frame1.place(relx= 0.02 , rely=0.02, relwidth= 0.96, relheight= 0.46)
 
         self.frame2 = Frame(self.janela, bd=4, bg='#dfe3ee', highlightbackground='#759fe6', highlightthickness=3)
         self.frame2.place(relx=0.02, rely=0.5, relwidth=0.96, relheight=0.46)
@@ -80,4 +80,4 @@ class Aplicacao():
         
         
 # Chamando a Função:        
-Aplicacao()
+App()
