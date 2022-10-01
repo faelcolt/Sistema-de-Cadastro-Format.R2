@@ -54,7 +54,7 @@ class Aplicacao():
         
         # Entrada de Dados:
         self.lb_codigo = Label(self.frame1, text='CÓDIGO')   
-        self.lb_codigo.place(relx=0.05, relx=0.05)
+        self.lb_codigo.place(relx=0.05, rely=0.05)
         
 
 # Chamando a Função:        
