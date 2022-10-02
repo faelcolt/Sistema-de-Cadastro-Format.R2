@@ -1,6 +1,5 @@
 from tkinter import*
 from tkinter import ttk
-from tkinter import font
 
 
 root=Tk()
@@ -70,7 +69,7 @@ class Application(Funcs):
         self.lb_codigo=Label(self.frame_1, text="::: Código :::", bg="lightcyan", fg="black")
         self.lb_codigo.place(relx=0.06, rely= 0.07)
 
-        self.codigo_entry=Entry(self.frame_1,bg="ivory2")
+        self.codigo_entry=Entry(self.frame_1,bg="ivory2", foreground='black')
         self.codigo_entry.place(relx=0.07, rely=0.15,relwidth=0.07)
 
         # criacao da label e entrada do nome
@@ -78,7 +77,7 @@ class Application(Funcs):
         self.lb_nome=Label(self.frame_1, text="::: Nome :::", bg="lightcyan", fg="black")
         self.lb_nome.place(relx=0.07, rely= 0.35)
 
-        self.nome_entry=Entry(self.frame_1,bg="ivory2")
+        self.nome_entry=Entry(self.frame_1,bg="ivory2", foreground='black')
         self.nome_entry.place(relx=0.07, rely=0.45,relwidth=0.4)
 
 
@@ -87,7 +86,7 @@ class Application(Funcs):
         self.lb_email=Label(self.frame_1, text="::: E-mail :::", bg="lightcyan", fg="black")
         self.lb_email.place(relx=0.5, rely= 0.35)
 
-        self.email_entry=Entry(self.frame_1,bg="ivory2")
+        self.email_entry=Entry(self.frame_1,bg="ivory2", foreground='black')
         self.email_entry.place(relx=0.5, rely=0.45,relwidth=0.3)
 
 
@@ -96,7 +95,7 @@ class Application(Funcs):
         self.lb_tel=Label(self.frame_1, text="::: Telefone :::", bg="lightcyan", fg="black")
         self.lb_tel.place(relx=0.07, rely= 0.6)
 
-        self.tel_entry=Entry(self.frame_1,bg="ivory2")
+        self.tel_entry=Entry(self.frame_1,bg="ivory2", foreground='black')
         self.tel_entry.place(relx=0.07, rely=0.7,relwidth=0.2)
 
         #criacao da label e entrada do cep
@@ -104,7 +103,7 @@ class Application(Funcs):
         self.lb_cep=Label(self.frame_1, text="::: CEP :::", bg="lightcyan", fg="black")
         self.lb_cep.place(relx=0.3, rely= 0.6)
 
-        self.cep_entry=Entry(self.frame_1,bg="ivory2")
+        self.cep_entry=Entry(self.frame_1,bg="ivory2", foreground='black')
         self.cep_entry.place(relx=0.3, rely=0.7,relwidth=0.2)
 
         #criacao da label e entrada do CNPJ
@@ -112,7 +111,7 @@ class Application(Funcs):
         self.lb_cnpj=Label(self.frame_1, text="::: CNPJ :::", bg="lightcyan", fg="black")
         self.lb_cnpj.place(relx=0.56, rely= 0.6)
 
-        self.cnpj_entry=Entry(self.frame_1,bg="ivory2")
+        self.cnpj_entry=Entry(self.frame_1,bg="ivory2", foreground='black')
         self.cnpj_entry.place(relx=0.56, rely=0.7,relwidth=0.2)
 
 
@@ -121,7 +120,7 @@ class Application(Funcs):
         self.lb_cidade=Label(self.frame_1, text="::: Cidade :::", bg="lightcyan", fg="black")
         self.lb_cidade.place(relx=0.8, rely= 0.6)
 
-        self.cidade_entry=Entry(self.frame_1,bg="ivory2")
+        self.cidade_entry=Entry(self.frame_1,bg="ivory2", foreground='black')
         self.cidade_entry.place(relx=0.8, rely=0.7,relwidth=0.2)
 
 
