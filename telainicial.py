@@ -17,7 +17,7 @@ class Application():
     def tela(self):
        
         self.root.title("Cadastro de Clientes")
-        self.root.configure(background="lightblue")
+        self.root.configure(background="#000000")
         self.root.geometry("700x500")
         self.root.resizable(True,True)
         self.root.maxsize(width=900,height=700)
