@@ -154,7 +154,7 @@ class Application(Funcs, Relatorios):
         self.Menus()
         root.mainloop()
     def tela(self):
-        self.root.title("Cadastro de Clientes")
+        self.root.title("SYSCAD ~ FORMAT.R2")
         self.root.configure(background= '#1e3743')
         self.root.geometry("700x500")
         self.root.resizable(True, True)
