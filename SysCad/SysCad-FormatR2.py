@@ -1,5 +1,6 @@
 from tkinter import*
 from tkinter import ttk
+import sqlite3
 
 
 root=Tk()
@@ -13,6 +14,27 @@ class Funcs():
         self.cep_entry.delete(0, END)
         self.cnpj_entry.delete(0, END)
         self.cidade_entry.delete(0, END)
+    
+    def conecta_bd(self):
+        self.conn = sqlite3.connect('clientes.bd')
+        self.cursor = self.conn.cursor()
+    
+    def desconecta_bd(self):
+        self.conn.close()
+        
+    def montaTabelas(self):
+        self.conecta_bd(); print('CONECTANDO AO BANCO DE DADOS ... ')
+        ### criar tabela:
+        self.cursor.execute("""
+            CREATE TABLE IF NOT EXISTS clientes (
+                cod INTEGER PRIMARY KEY,
+                nome_cliente CHAR(40) NOT NULL,
+                telefone INTEGER(20)
+                cidade CHAR(40)
+            );
+        """)
+        self.conn.commit(); print('BANCO DE DADOS CRIADO! ')
+        self.desconecta_bd()
 
 class Application(Funcs):
     def __init__(self):
@@ -22,6 +44,7 @@ class Application(Funcs):
         self.frames_da_tela()
         self.widgets_frame1()
         self.lista_frame2()
+        self.montaTabelas()
         root.mainloop()
       
         
